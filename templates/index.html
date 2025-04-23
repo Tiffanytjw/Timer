@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>勉強時間記録タイマー</title>
+    <style>
+        body { font-family: sans-serif; }
+        .container { width: 80%; margin: 0 auto; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        input[type="text"], textarea, select { width: 100%; padding: 8px; box-sizing: border-box; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+        #current-time { font-size: 24px; margin-bottom: 20px; }
+        #records-title { margin-top: 30px; }
+        #study-records { border-collapse: collapse; width: 100%; margin-top: 10px; }
+        #study-records th, #study-records td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>勉強時間記録タイマー</h1>
+        <div id="current-time"></div>
+        <div class="form-group">
+            <label for="title">タイトル（必須）:</label>
+            <select id="title" name="title" required>
+                <option value="履歴書の修正">履歴書の修正</option>
+                <option value="企業エントリ">企業エントリ</option>
+                <option value="面接準備">面接準備</option>
+                <option value="プログラミング勉強">プログラミング勉強</option>
+                <option value="試験勉強">試験勉強</option>
+                <option value="(その他)">(その他)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="memo">メモ（任意）:</label>
+            <textarea id="memo" name="memo" rows="3"></textarea>
+        </div>
+
+        <button id="start-stop-button">開始</button>
+
+        <h2 id="records-title">今日の記録</h2>
+        <table id="study-records">
+            <thead>
+                <tr>
+                    <th>タイトル</th>
+                    <th>開始時間</th>
+                    <th>終了時間</th>
+                    <th>時間</th>
+                    <th>メモ</th>
+                </tr>
+            </thead>
+            <tbody id="records-body">
+            </tbody>
+        </table>
+
+        <button id="end-day-button">一日終了</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+        // JavaScriptのコードは static/script.js に記述します
+    </script>
+</body>
+</html>
