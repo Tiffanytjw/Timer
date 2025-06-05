@@ -38,7 +38,7 @@
 3. クローンしたプロジェクトディレクトリに移動
 
    ```bash
-   cd study_timer
+   cd timer
    ```
 
 
