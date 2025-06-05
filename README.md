@@ -37,22 +37,16 @@
 
 ### 1. GitHubからプロジェクトをクローン
 
-1. GitHubリポジトリのURLを確認（例）
-
-   ```
-   https://github.com/your-username/study_log_app.git
-   ```
-
-2. 任意のディレクトリでクローン実行
+1. 任意のディレクトリでクローン実行
 
    ```bash
-   git clone https://github.com/your-username/study_log_app.git
+   git clone https://github.com/Tiffanytjw/Timer.git
    ```
 
 3. クローンしたプロジェクトディレクトリに移動
 
    ```bash
-   cd study_log_app
+   cd study_timer
    ```
 
 ---
